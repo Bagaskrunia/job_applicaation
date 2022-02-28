@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:job_applicaation/pages/signin_page.dart';
 
 class GetStartedPage extends StatefulWidget {
   const GetStartedPage({Key? key}) : super(key: key);
@@ -81,7 +82,13 @@ class _GetStartedPageState extends State<GetStartedPage> {
                       width: 200,
                       height: 45,
                       child: OutlinedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SignInPages()),
+                          );
+                        },
                         style: OutlinedButton.styleFrom(
                             side: BorderSide(
                               color: Colors.white,

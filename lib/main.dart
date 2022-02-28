@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:job_applicaation/pages/signup_page.dart';
 import 'package:job_applicaation/pages/splash_page.dart';
 import 'package:job_applicaation/pages/started_page.dart';
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SplashPage(),
         '/started_page': (context) => GetStartedPage(),
+        '/SignUpPage': (context) => SignUpPage(),
       },
     );
   }
